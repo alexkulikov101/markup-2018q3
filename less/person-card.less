@@ -1,0 +1,105 @@
+.person-card {
+    width: 566px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &__img {
+        width: 100px;
+        height: 100px;
+        border: 5px solid #e5e5e5;
+        border-radius: 50%;
+    }
+    &__name {
+        margin-top: 8px;
+        margin-bottom: 7px;
+        font-family: "latosemibold", "Arial", sans-serif;
+        font-size: 17px;
+        text-align: center;
+    }
+    &__prof {
+        margin-bottom: 13px;
+        text-align: center;
+        font-family: "latoregular", "Arial", sans-serif;
+        font-size: 15px;
+        color: #8e8e8e;
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__social-list {
+        width: 89px;
+        margin: 0;
+        padding: 0;
+        padding-left: 4px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__social-item {
+        position: relative;
+    }
+    &__social-link {
+        transition: all .3s;
+        &--fb:hover:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 16px;
+            background-image: url("/img/fa-facebook-hover.png");
+            background-repeat: no-repeat;
+        }
+        &--tw:hover:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 16px;
+            height: 14px;
+            background-image: url("/img/fa-twitter-hover.png");
+            background-repeat: no-repeat;
+        }
+        &--drib:hover:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 14px;
+            height: 13px;
+            background-image: url("/img/fa-link-hover.png");
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+@media (max-width: 1599px) {
+    .person-card {
+        width: auto;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .person-card {
+        &__item {
+            margin: 20px 10px;
+        }
+    }
+}
+
+@media(max-width: 484px) {
+    .person-card {
+        width: 300px;
+        padding: 0;
+        justify-content: center;
+        &__item {
+            width: 100px;
+            text-align: center;
+        }
+    }
+}

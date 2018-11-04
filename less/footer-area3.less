@@ -1,0 +1,72 @@
+.footer-area3 {
+    width: 315px;
+    padding-left: 82px;
+    &__box {
+        width: 250px;
+        margin-top: 21px;
+    }
+    &__tel {
+        position: relative;
+        display: inline-block;
+        font-family: "latosemibold", "Arial", sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+        color: #686868;
+        margin-bottom: 14px;
+        padding-left: 24px;
+        transition: all 0.3s;
+        &:hover {
+            color: #fffefe;
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            top: 2px;
+            left: 0;
+            width: 12px;
+            height: 12px;
+            background-image: url("/img/fa-phone.png");
+        }
+    }
+    &__email {
+        position: relative;
+        display: inline-block;
+        font-family: "latoligth", "Arial", sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        color: #686868;
+        margin-bottom: 5px;
+        padding-left: 24px;
+        transition: all 0.3s;
+        &:hover {
+            color: #fffefe;
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 3px;
+            width: 13px;
+            height: 12px;
+            background-image: url("/img/fa-envelope.png");
+        }
+    }
+    &__text {
+        font-family: "latoligth", "Arial", sans-serif;
+        font-size: 14px;
+        line-height: 29px;
+    }
+}
+
+@media(max-width: 1250px) {
+    .footer-area3 {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media(max-width: 510px) {
+    .footer-area3 {
+        width: 300px;
+    }
+}

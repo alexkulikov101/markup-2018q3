@@ -1,0 +1,33 @@
+.footer-area1 {
+    width: 378px;
+    height: 150px;
+    border-right: 1px solid #393939;
+    &__text {
+        width: 302px;
+        margin-top: 15px;
+        margin-bottom: 17px;
+        font-family: "latosemibold", "Arial", sans-serif;
+        font-size: 15px;
+        line-height: 26px;
+    }
+    &__name {
+        font-family: "latobold", "Arial", sans-serif;
+    }
+}
+
+@media(max-width: 1250px) {
+    .footer-area1 {
+        border: none;
+        text-align: center;
+    }
+}
+
+@media(max-width: 510px) {
+    .footer-area1 {
+        width: 250px;
+        margin-bottom: 51px;
+        &__text {
+            width: auto;
+        }
+    }
+}
