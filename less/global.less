@@ -1,0 +1,60 @@
+body {
+    font-family: "latolight", "Arial", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    //width: 1600px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.content-box-component {
+    box-sizing: content-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        width: auto;
+        padding: 0px 20px;
+    }
+}

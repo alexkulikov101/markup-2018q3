@@ -1,0 +1,173 @@
+.packet {
+    transition: all 0.3s;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 1);
+    }
+    border-top: 5px solid #f9d423;
+    padding-top: 36px;
+    padding-left: 27px;
+    padding-right: 27px;
+    background-color: #fff;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.06);
+    &--grey {
+        border-top: 5px solid #7f8c8d;
+    }
+    &--red {
+        border-top: 5px solid #f85f40;
+    }
+    &--green {
+        border-top: 5px solid #1abc9c;
+    }
+    &__progress {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        padding-right: 8px;
+        margin-bottom: 12px;
+        &:before {
+            position: absolute;
+            content: "";
+            top: 19px;
+            left: 17px;
+            background-image: url("/img/fa-anchor.png");
+            width: 18px;
+            height: 18px;
+        }
+        &--grey {
+            &:before {
+                width: 16px;
+                height: 16px;
+                background-image: url("/img/fa-star-half-empty.png");
+            }
+        }
+        &--red {
+            &:before {
+                width: 16px;
+                height: 16px;
+                background-image: url("/img/fa-star.png");
+            }
+        }
+        &--green {
+            &:before {
+                width: 20px;
+                height: 16px;
+                background-image: url("/img/fa-dimond.png");
+            }
+        }
+    }
+    &__progress-svg {
+        display: block;
+        max-height: 55px;
+    }
+    &__progress-svg-circle {
+        stroke: #f9d423;
+        fill: none;
+        stroke-width: 4;
+        stroke-linecap: round;
+        animation: progress 1s ease-out forwards;
+        &--grey {
+            stroke: #7f8c8d;
+        }
+        &--red {
+            stroke: #f85f40;
+        }
+        &--green {
+            stroke: #1abc9c;
+        }
+    }
+    &__title {
+        font-family: "latobold", "Arial", sans-serif;
+        font-size: 16px;
+        color: #282828;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 17px;
+        border-bottom: 1px solid #dfdfdf;
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-top: 17px;
+        font-family: "latosemibold", "Arial", sans-serif;
+        color: #b4b4b4;
+        border-bottom: 1px solid #dfdfdf;
+    }
+    &__item {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__value {
+        margin-left: auto;
+        color: #f9d423;
+        &--grey {
+            color: #7f8c8d;
+        }
+        &--red {
+            color: #f85f40;
+        }
+        &--green {
+            color: #1abc9c;
+        }
+    }
+    &__price {
+        position: relative;
+        width: 105px;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #f9d423;
+        font-family: "latoheavybold", "Arial", sans-serif;
+        font-size: 28px;
+        text-align: center;
+        color: #2c2c2c;
+        &--grey {
+            border-bottom: 3px solid #7f8c8d;
+        }
+        &--red {
+            border-bottom: 3px solid#f85f40;
+        }
+        &--green {
+            border-bottom: 3px solid #1abc9c;
+        }
+    }
+    &__dollar {
+        position: absolute;
+        top: 5px;
+        left: 18px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &__digital {
+        display: inline-block;
+        padding-left: 15px;
+    }
+    &__mo {
+        font-family: "latoregular", "Arial", sans-serif;
+        font-size: 13px;
+        color: #8d8d8d;
+    }
+    &__select {
+        font-size: 16px;
+        font-family: "MyriadPro-Bold", "Arial", sans-serif;
+        color: #282828;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1599px) {
+    .packet {
+        border: 5px solid #f9d423;
+        &--grey {
+            border: 5px solid #7f8c8d;
+        }
+        &--red {
+            border: 5px solid #f85f40;
+        }
+        &--green {
+            border: 5px solid #1abc9c;
+        }
+    }
+}

@@ -1,0 +1,160 @@
+.domain {
+    &__caption {
+        margin-top: 85px;
+        margin-bottom: 24px;
+        color: #383737;
+        font-family: "latoheavy", "Arial", sans-serif;
+        font-size: 24px;
+        text-align: center;
+    }
+    &__text {
+        font-family: "montserratlight", "Arial", sans-serif;
+        font-size: 16px;
+        color: #a2a2a2;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    &__form {
+        width: 890px;
+        height: 50px;
+        margin: 0 auto;
+        margin-bottom: 42px;
+        border: 1px solid #d9d9d9;
+    }
+    &__label-www {
+        position: relative;
+        &:after {
+            position: absolute;
+            content: "";
+            top: -5px;
+            right: 0;
+            width: 1px;
+            height: 32px;
+            background-color: #d9d9d9;
+        }
+    }
+    &__label-what {
+        position: relative;
+        &:after {
+            position: absolute;
+            content: "";
+            top: -5px;
+            right: 3px;
+            width: 1px;
+            height: 32px;
+            background-color: #d9d9d9;
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            top: 8px;
+            right: -68px;
+            background-image: url(/img/fa-angle-down.png);
+            width: 8px;
+            height: 5px;
+            z-index: 3;
+        }
+    }
+    &__input-www {
+        width: 71px;
+        height: 48px;
+        border: none;
+        color: #d2d2d2;
+        text-align: center;
+        font-family: "latoregular", "Arial", sans-serif;
+    }
+    &__input-what {
+        width: 731px;
+        height: 47px;
+        border: none;
+        color: #d2d2d2;
+        font-family: "latosemibold", "Arial", sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        padding-left: 12px;
+    }
+    &__select {
+        position: relative;
+        width: 77px;
+        height: 45px;
+        padding-left: 6px;
+        border: none;
+        color: #d2d2d2;
+        text-align: center;
+        font-family: "latoregular", "Arial", sans-serif;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        &:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 0;
+            background-image: url(/img/fa-star.png);
+            width: 8px;
+            height: 5px;
+        }
+    }
+}
+
+@media (max-width: 1599px) {
+    .domain {
+        display: flex;
+        flex-direction: column;
+        &__form {
+            width: auto;
+        }
+        &__input-what {
+            width: auto;
+        }
+        &__text {
+            width: 400px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .domain {
+        &__caption {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+        &__text {
+            width: 300px;
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    .domain {
+        &__form {
+            display: flex;
+            flex-direction: column;
+            height: 183px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        &__label-what {
+            border: 1px solid #d2d2d2;
+            &:after {
+                background-color: #fff;
+            }
+            &:before {
+                background-image: none;
+            }
+        }
+        &__label-www {
+            &:after {
+                background-color: #fff;
+            }
+        }
+        &__select {
+            margin-top: 2px;
+        }
+    }
+}

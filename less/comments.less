@@ -1,0 +1,122 @@
+.comments {
+    background: #000 url('/img/CommentsBGPhoto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 71%;
+    min-height: 190px;
+    &__slider {
+        position: relative;
+        width: 890px;
+        min-height: 190px;
+        overflow: hidden;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    &__slide {
+        width: 890px;
+        overflow: hidden;
+    }
+    &__text {
+        padding-top: 44px;
+        padding-bottom: 14px;
+        text-align: center;
+        font-family: "latolight", "Arial", sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        color: #fff;
+    }
+    &__name {
+        width: 157px;
+        position: relative;
+        font-family: "latobold", "Arial", sans-serif;
+        font-size: 20px;
+        margin: 0 auto;
+        &:after {
+            position: absolute;
+            content: "";
+            top: 4px;
+            right: 60px;
+            width: 1px;
+            height: 16px;
+            background-color: #959695;
+        }
+    }
+}
+
+// style dots for slider
+.flickity-page-dots {
+    width: 47px;
+    height: 55px;
+    position: absolute;
+    top: 60%;
+    right: 367px;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    list-style: none;
+    .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        &:hover {
+            cursor: pointer;
+        }
+        &.is-selected {
+            background-color: #fff;
+        }
+    }
+}
+
+.flickity-viewport {
+    min-height: 190px;
+}
+
+.flickity-slider {
+    min-height: 190px;
+}
+
+@media(max-width: 1599px) {
+    .comments {
+        &__name {
+            text-align: center;
+            &:after {
+                width: 0;
+                background-color: none;
+            }
+        }
+    }
+    .flickity-page-dots {
+        display: none;
+    }
+}
+
+@media(max-width: 1000px) {
+    .comments {
+        &__slider {
+            width: 400px;
+        }
+        &__slide {
+            width: 400px;
+        }
+    }
+    .flickity-viewport {
+        min-height: 240px;
+    }
+}
+
+@media(max-width: 450px) {
+    .comments {
+        &__slider {
+            width: 300px;
+        }
+        &__slide {
+            width: 300px;
+        }
+    }
+    .flickity-viewport {
+        min-height: 240px;
+    }
+}
